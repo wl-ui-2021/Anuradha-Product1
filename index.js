@@ -23,7 +23,7 @@ function loadData(){
     // create xhr 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET' , '../data.json' ,true);
+    xhr.open('GET' , '/data.json' ,true);
     
     xhr.onload= function(){
         if(this.status === 200){
