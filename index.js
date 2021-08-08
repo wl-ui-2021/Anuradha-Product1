@@ -2,6 +2,7 @@
 const cart=document.getElementById('shoppping-cart')
 const dynamicdiv =document.getElementById('dynamically')
 const courseList =document.getElementById("courseList")
+
 const coursesData = [];
 
 // load listeners
@@ -15,6 +16,8 @@ function loadListeners(){
    /*  courseList.addEventListener("click",addcourselist) */
     /* dynamicdiv.addEventListener("click",addcourses)  */
     dynamicdiv.addEventListener("click", addcourselist)
+    cart.addEventListener("click", displaymesseage)
+   
     document.addEventListener('DOMContentLoaded' , onload); 
 }
 
@@ -78,6 +81,9 @@ function loadData(){
     xhr.send();
 }
 
+
+
+
 function addcourselist(e){
    e.preventDefault()
 //    console.log(e.target.classList.contains)
@@ -102,24 +108,32 @@ function getCourseInfo(course){
 }
 
 function addIntoCart(course){
-    const row = document.createElement('div')
+    const row = document.createElement('tr')
+    row.classList.add("border")
+    row.classList.add("solid")
+   
+    
+    
+    
     
     row.innerHTML = `
-    <div class="card">
-   
-    <div class="card-header">
-    <img class="card-img-top "  src="${course.img}" width=30></div>
-    <p>${course.name}</p>
-    <p>${course.price}</p>
+    <td class="col-2"><img src="${course.img}" width=60></td>
+    <td style="font-size:12px">${course.name}</td>
+    <td class="p-2"><strong>${course.price}<strong></td>
+    <button class="clearitem btn btn-primary btn-sm " data-id="${course.id}"> clear </button>
+    <button class="displaymesseage btn btn-warning  btn-sm">Buy Now</button>
+
     
-    <button class="clearitem btn btn-primary text-light" data-id="${course.id}"> clear </button>
-    </div>
-    </div>
+   
+    
+    
+   
     `
 
     cart.appendChild(row)
     //save after click - add to cart
     saveIntoStorage(course)
+    /* countCart() */
 }
 
 function saveIntoStorage(coursesData){
@@ -148,18 +162,35 @@ function onload(){
     console.log("rOn",coursesOn)
     coursesOn.forEach((function(course){
         const row = document.createElement('tr')
-        row.add()
+        row.classList.add("border")
+        row.classList.add("solid")
+    
+       
 
         row.innerHTML = `
-        <td><img src="${course.img}" width=50></td>
-                    <td><h6>${course.name}</h6></td>
-                    <td>${course.price}</td>
-                    <button class="clearitem btn btn-primary text-light" data-id="${course.id}"> clear </button>
+        <td class="col-2"><img src="${course.img}" width=60></td>
+        <td style="font-size:12px"; pddding:5px;">${course.name}</td>
+        <td class="p-2 pt-0"><strong>${course.price}<strong></td>
+        <button class="clearitem btn btn-primary btn-sm" data-id="${course.id}"> clear </button>
+        <button class="displaymesseage btn btn-warning  btn-sm">Buy Now</button>
+     
+        
         `
     
         cart.appendChild(row)
+        
     }))
     
+}
+
+function displaymesseage(e){
+    e.preventDefault();
+    console.log("clicked",e)
+    //check if the it contains class- clearitem 
+    if(e.target.classList.contains('displaymesseage')){
+        
+    alert("Thanks for Checking out ,  Visit Again ")
+    }
 }
   
 function removeCourse(e){
@@ -174,6 +205,7 @@ function removeCourse(e){
       console.log(courseId)
       e.target.parentElement.remove()
      removeCourseinfofromlocal(courseId)
+     /* clearCart(course) */
     }
   
 }
@@ -194,3 +226,10 @@ function removeCourseinfofromlocal(courseId){
     // and update the local storage 
     localStorage.setItem('courses' , JSON.stringify(courses));
 }
+
+
+
+
+
+
+
