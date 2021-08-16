@@ -1,0 +1,52 @@
+[
+    {
+        "id":0,
+        "img": "https://i.udemycdn.com/course/240x135/1395136_3f8a_3.jpg",
+        "name": "Computer Science 101: Master the Programming",
+        "price": "₹150"
+    },
+    {
+        "id":1,
+        "img": "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg",
+        "name": "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
+        "price": "₹299"
+    },
+    {
+        "id":2,
+        "img": "https://i.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",
+        "name": "React-The Complete Guide with Redux , hooks",
+        "price": "₹499"
+    },
+    {
+        "id":3,
+        "img": "https://i.udemycdn.com/course/240x135/2377464_ca3f_7.jpg",
+        "name": "JavaScript & LeetCode | The Ultimate Interview Bootcamp",
+        "price": "₹599"
+    },
+    
+    {
+        "id":4,
+        "img":"https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg",
+        "name":"2021 Complete Python Bootcamp ",
+        "price":"₹459 "
+    },
+    {
+        "id":5,
+        "img":"https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg",
+        "name":"An Entire MBA in 1 Course:Award Winning...",
+        "price":"₹1150"
+    },
+    {
+        "id":6,
+        "img":"https://img-c.udemycdn.com/course/240x135/1921420_384a_12.jpg",
+        "name":"Ultimate AWS Certified Developer Associate 2021",
+        "price":"₹899"
+    },
+    {
+        "id":7,
+        "img":"https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
+        "name":"Build Responsive Real-World Websites with HTML and CSS",
+        "price":"₹159"
+    }
+    
+]
