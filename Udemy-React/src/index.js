@@ -9,13 +9,13 @@ import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import {BrowserRouter as Router} from 'react-router-dom'
+
 ReactDOM.render(
   
-<React.StrictMode>
+
       <Router>
         <App />
-      </Router>
-  </React.StrictMode>,
+      </Router>,
   document.getElementById('root')
 );
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel'
 
 import image5 from "./image5.jpg"
 import image4 from "./image4.jpg"
@@ -8,9 +9,46 @@ import image from "./image.jpg"
 class Slidder extends Component {
     render() {
         return (
+
+          <div >
+<div >
+<Carousel fade >
+  <Carousel.Item >
+    <img
+    style={{height:"400px"}}
+      className="d-block w-100 "
+      src={image}
+      alt="First slide"
+    />
+    
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{height:"400px"}}
+      className="d-block w-100"
+      src={image5}
+      alt="Second slide"
+    />
+
+    
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+    style={{height:"400px"}}
+      className="d-block w-100"
+      src={image1}
+      alt="Third slide"
+    />
+
+   
+  </Carousel.Item>
+</Carousel>
+
+</div>
+          </div>
         
     
-            <div id="carouselExampleIndicators" className="carousel slide " data-ride="carousel" >
+           /*  <div id="carouselExampleIndicators" className="carousel slide " data-ride="carousel" >
 
                  
 
@@ -48,7 +86,7 @@ class Slidder extends Component {
       
         
           
-          </div>
+          </div> */
           
         );
     }

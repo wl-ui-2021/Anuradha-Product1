@@ -1,5 +1,5 @@
 import BUTTON from './Button'
-import Input from './input'
+import Input from './Input'
 import Checkbox from './Checkbox'
 
 export {BUTTON, Input , Checkbox}

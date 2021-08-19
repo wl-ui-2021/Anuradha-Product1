@@ -5,20 +5,20 @@ class Footer extends React.Component {
         return (
             <div>
 
-
+          
                 <div className="row pt-5 px-3 border-top mt-5 " style={{fontSize: "13px"}}>
                     <div className="col">
 
 
                         <ul className="nav flex-column">
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#"><b>Udemy for business</b></a>
+                                <a className="nav-link text-info" ><b>Udemy for business</b></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#"><b>Become and Instructor</b></a>
+                                <a className="nav-link text-info" ><b>Become and Instructor</b></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">Mobile Apps</a>
+                                <a className="nav-link text-info" >Mobile Apps</a>
                             </li>
                         </ul>
 
@@ -28,13 +28,13 @@ class Footer extends React.Component {
 
                         <ul className="nav flex-column">
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">About</a>
+                                <a className="nav-link text-info">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">Careers</a>
+                                <a className="nav-link text-info" >Careers</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">Blog</a>
+                                <a className="nav-link text-info">Blog</a>
                             </li>
                         </ul>
 
@@ -43,13 +43,13 @@ class Footer extends React.Component {
 
                         <ul className="nav flex-column">
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">Topics</a>
+                                <a className="nav-link text-info" >Topics</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">Support</a>
+                                <a className="nav-link text-info" >Support</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-info" href="#">Affiliate</a>
+                                <a className="nav-link text-info" Affiliate></a>
                             </li>
                         </ul>
 
@@ -86,13 +86,13 @@ class Footer extends React.Component {
                         <div className="col">
                             <ul className="nav justify-content-end">
                                 <li className="nav-item">
-                                    <a className="nav-link active text-info" href="#">Terms</a>
+                                    <a className="nav-link active text-info" >Terms</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-info" href="#">Privacy and Cookie Police</a>
+                                    <a className="nav-link text-info">Privacy and Cookie Police</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link text-info" href="#">Intellectual Property</a>
+                                    <a className="nav-link text-info" >Intellectual Property</a>
                                 </li>
                             </ul>
 
