@@ -6,7 +6,6 @@ export default function Cart(props) {
     const itemsPrice=cartItems.reduce((a,c)=> a + c.price * c.qty, 0 );
     const taxPrice= itemsPrice * 0.14;
     const totalPrice = itemsPrice + taxPrice 
-    
     return (
         <div className="container-fluid">
             <div className="row">
